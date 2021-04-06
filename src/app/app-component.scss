@@ -13,7 +13,7 @@
 }
 
 .header_menu>div {
-    margin: 8px;
+    margin: 11px;
 }
 
 .header_menu_icon>mat-icon {
@@ -78,4 +78,18 @@
 .header_menu_bottom_item {
     font-size: 13px;
     font-weight: 800;
+}
+
+.header_bottom {
+    height: 49px;
+    background-image: none;
+    background-color: #232f3e;
+    padding-left: 8px;
+    font-size: 12px;
+}
+
+.header_bottom_location_text {
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
