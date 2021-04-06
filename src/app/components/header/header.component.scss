@@ -1,6 +1,13 @@
+.header {
+    /* //we can do this later */
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
 .header_top {
     height: 60px;
-    background-color: #0f1111;
+    background-color: #0F1111;
     font-size: 14px;
     display: flex;
     color: white;
@@ -10,10 +17,12 @@
 
 .header_menu {
     display: flex;
+    padding: 10px 8px 8px 8px;
+    width: 100%;
 }
 
 .header_menu>div {
-    margin: 11px;
+    margin: 8px;
 }
 
 .header_menu_icon>mat-icon {
@@ -23,9 +32,10 @@
 
 .header_menu_searchbar {
     display: flex;
+    margin-top: 8px;
     height: 40px;
     justify-content: center;
-    flex: 1px;
+    flex: 1;
 }
 
 .header_menu_input {
@@ -45,20 +55,6 @@
     align-items: center;
 }
 
-.header_menu_cart {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 8px;
-    height: 50px;
-    justify-content: space-around;
-}
-
-.header_cart_number {
-    color: #febd69;
-    font-size: 25px;
-    font-weight: 800;
-}
-
 .header_menu_logo {
     object-fit: contain;
     width: 100px;
@@ -71,8 +67,8 @@
 }
 
 .header_menu_top_item {
-    font-size: 13px;
-    color: lightgrey;
+    font-size: 10px;
+    color: lightgray;
 }
 
 .header_menu_bottom_item {
@@ -80,10 +76,26 @@
     font-weight: 800;
 }
 
+.header_menu_cart {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.header_cart_number {
+    color: #febd69;
+    font-size: 25px;
+    font-weight: 800;
+}
+
 .header_bottom {
     height: 49px;
     background-image: none;
     background-color: #232f3e;
+    /* padding-top: 5px;
+  padding-bottom: 5px; */
     padding-left: 8px;
     font-size: 12px;
 }
