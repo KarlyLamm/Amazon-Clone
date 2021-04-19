@@ -7,6 +7,6 @@ export class ShoppingCartService {
   constructor() {}
   addProduct = (product: any) => {
     console.log('added', product);
-    //localStorage.setItem('shopping_cart', product)
+    localStorage.setItem('shopping_cart', 'product');
   };
 }
