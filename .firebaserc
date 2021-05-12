@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myclone-d5ebb": {
+      "hosting": {
+        "amazon-clone-app": [
+          "myclone-d5ebb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myclone-d5ebb"
+  }
+}

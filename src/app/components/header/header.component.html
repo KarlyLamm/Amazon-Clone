@@ -13,11 +13,15 @@
                 </div>
             </div>
         </div>
-        <div routerLink="/login" class="header_menu_signin">
-            <span class="header_menu_top_item">Hello, Sign in</span>
-            <span class="header_menu_bottom_item">Accounts & Lists</span>
+        <div class="header_menu_signin">
+            <span class="header_menu_top_item" *ngIf="auth.isLoggedIn()">Hello, {{ auth.getUser() }}</span
+      >
+      <span (click)="signOut()" *ngIf="auth.isLoggedIn()">sign out</span>
+            <span routerLink="/login" class="header_menu_top_item" *ngIf="!auth.isLoggedIn()">Hello, sign-in</span
+      >
+      <span class="header_menu_bottom_item">Accounts & Lists</span>
         </div>
-        <div routrLink="/login" class="header_menu_signin">
+        <div routerLink="/login" class="header_menu_signin">
             <span class="header_menu_top_item">Returns</span>
             <span class="header_menu_bottom_item">& Orders</span>
         </div>
